@@ -28,7 +28,7 @@ caproverOneClickApp:
 
             Enter your MySQL Configuration parameters and click on next. It will take about a minute for the process to finish.
         end: "MySQL is deployed and available as srv-captain--$$cap_appname-db:3306 to other apps. For example with NodeJS, you do 'var con = mysql.createConnection({ host: 'srv-captain--$$cap_appname-db', user: 'root', password: '*********' });'"
-    displayName: MySQL
+    displayName: MySQL -Kayani
     isOfficial: true
     description: MySQL is a relational database management system based on SQL
     documentation: Taken from https://docs.docker.com/compose/mysql/
