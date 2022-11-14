@@ -1,0 +1,18 @@
+captainVersion: 4
+services:
+    '$$cap_appname':
+        image: registry:2
+        restart: always
+        caproverExtra:
+            containerHttpPort: '5000'
+        volumes:
+            - '$$cap_appname-data:/var/lib/registry'
+caproverOneClickApp:
+    instructions:
+        start: |-
+            Docker-Registry A minimalist, docker registry
+        end: |-
+            Docker-Registryhas been successfully deployed!
+    displayName: Docker-Registry
+    isOfficial: true
+    description: A minimalist, docker registry
